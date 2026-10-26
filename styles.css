@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    background-image:
+        linear-gradient(rgba(0, 35, 65, 0.65),
+                        rgba(0, 35, 65, 0.65)),
+        url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #eaf7fc;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+    background-color: #082b49;
+    color: white;
+}
+
+.logo {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header h1 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.header p {
+    margin-bottom: 0;
+    color: #b8e8ff;
+}
+
+.contenido {
+    padding: 30px;
+    text-align: center;
+    color: #12344a;
+}
+
+.contenido h2 {
+    color: #075985;
+}
+
+.contenido p {
+    line-height: 1.7;
+}
+
+.imagen-piscina {
+    display: block;
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 25px 0;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 25px;
+    border-radius: 8px;
+    background-color: #0b65a5;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #084b7b;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #082b49;
+    color: white;
+    text-align: center;
+}
+
+.footer h3 {
+    color: #b8e8ff;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+}
